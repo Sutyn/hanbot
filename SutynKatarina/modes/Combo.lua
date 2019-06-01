@@ -27,7 +27,7 @@ combo.Combo_Kat = function()
                 for i, Daggers in pairs(p.Hidden) do
                     if Daggers then
                         if Daggers.StartTime <= game.time and player.pos:dist(Daggers.Position) > 150 and Daggers.Position:dist(player.pos) <= e.range  then                     
-                            local DaggerSpell = Daggers.Position + (target.pos - Daggers.Position):norm() * 230
+                            local DaggerSpell = Daggers.Position + (target.pos - Daggers.Position):norm() * 150
                             if target.pos:dist(Daggers.Position) <= w.range then
                                 e.get_caste_dagger(DaggerSpell);
                                 return
@@ -65,7 +65,7 @@ combo.Combo_Kat = function()
                 for i, Daggers in pairs(p.Hidden) do
                     if Daggers then
                         if Daggers.StartTime <= game.time and player.pos:dist(Daggers.Position) > 150 and Daggers.Position:dist(player.pos) <= e.range  then
-                            local DaggerSpell = Daggers.Position + (target.pos - Daggers.Position):norm() * 230
+                            local DaggerSpell = Daggers.Position + (target.pos - Daggers.Position):norm() * 150
                             if target.pos:dist(Daggers.Position) <= w.range then
                                 e.get_caste_dagger(DaggerSpell);
                                 return
